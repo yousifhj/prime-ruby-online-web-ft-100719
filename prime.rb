@@ -1,5 +1,3 @@
-def prime(n)
-  return false if n < 2
-
-  (2..n/2).none?{|i| n % i == 0}
+def prime? n
+  (2..Math.sqrt(n)).none? {|f| n % f == 0}
 end
